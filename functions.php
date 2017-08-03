@@ -6,7 +6,7 @@
  * @version 1.1
  */
 
-define( 'SNAPE_VERSION' , '1.1.1' );
+define( 'SNAPE_VERSION' , '1.1.2' );
 require_once( get_template_directory() . '/inc/widgets.php');
 
 /**
@@ -15,7 +15,7 @@ require_once( get_template_directory() . '/inc/widgets.php');
 require_once( get_template_directory() . '/inc/version.php' );
 $snape_update_checker = new ThemeUpdateChecker(
 	'Snape', 
-	'https://soft.vtrois.com/wordpress/theme/snape/upgrade.json'
+	'https://mirrors.vtrois.com/themes/snape/upgrade.json'
 );
 
 /**
