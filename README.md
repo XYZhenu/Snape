@@ -1,12 +1,11 @@
-#Snape
-###A magical theme for WordPress
+# Snape
 
-Snape is a magical theme for WordPress,based on [Bootstrap](https://github.com/twbs/bootstrap) and [Font Awesome](https://github.com/FortAwesome/Font-Awesome). Created and maintained by [Vtrois](https://www.vtrois.com). Stay up to date with the latest release and announcements on [Bulletin Board](https://www.vtrois.com/theme-snape.html).
+A magical theme for WordPress,based on [Bootstrap](https://github.com/twbs/bootstrap) and [Font Awesome](https://github.com/FortAwesome/Font-Awesome). Created and maintained by Vtrois. Stay up to date with the latest release and announcements on [Bulletin Board](https://github.com/Vtrois/Snape/issues).
 
-![Snape Demo](https://dn-coding-net-production-pp.qbox.me/4cbfb73a-553d-4e50-9efc-0fc2c623bd78.png) 
+![Snape Demo](http://i1.bvimg.com/1949/3c46d21130dd9201.png) 
 
-##Structure
-Within the download you'll find the following directories and files. You'll see something like this:
+## Structure
+Within the download you'll find the following directories and files. You'll see something like this :point_down:
 
 ```
 Snape/
@@ -82,15 +81,10 @@ Snape/
 └── screenshot.png
 ```
 
-## Changelog
+## License
 
-- v1.1 - She grew up
-- v1.0 - Initialize the project and say Good Morning to everyone!
-
-##License
-
-- The Snape Html,CSS,JavaScript,and PHP files are licensed under the GNU General Public License v2:
-  - http://www.gnu.org/licenses/gpl-2.0.html
+- The Snape Html,CSS,JavaScript,and PHP files are licensed under the GNU General Public License v3:
+  - http://www.gnu.org/licenses/gpl-3.0.html
 
 - The Snape documentation is licensed under the CC BY 4.0 License:
   - https://creativecommons.org/licenses/by/4.0
