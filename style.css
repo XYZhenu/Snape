@@ -12,10 +12,6 @@ Tags: black, white, blue, light, dark, theme-options, two-columns, left-sidebar,
 
 @charset "UTF-8";
 
-@font-face {
-	font-weight:400;font-family:Din;src:url(fonts/Din.otf) format("opentype")
-}
-
 body {
 	position: relative;
 	overflow-x: hidden;
@@ -26,7 +22,7 @@ body {
 	background: #fff;
 	font-weight: 300;
 	font-size: 14px;
-	font-family: Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif;
+	font-family:-apple-system,BlinkMacSystemFont,opensans,Optima,"Microsoft Yahei",sans-serif;
 	line-height: 24px
 }
 
@@ -48,7 +44,6 @@ h1,h2,h3,h4,h5 {
 	margin: 0 0 30px;
 	color: #5a5a5a;
 	font-weight: 400;
-	font-family: Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif
 }
 
 p {
@@ -70,11 +65,6 @@ ol,p,ul {
 	margin-bottom: 1em;
 	color: #333;
 	font-size: 1pc;
-	font-family: Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif
-}
-
-#navbar-menu li,.container-title span,footer p {
-	font-family: Din,Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif
 }
 
 cite {
@@ -217,10 +207,6 @@ article a {
 
 .pagination>li>a {
 	color: #333
-}
-
-.next,.pagination .next,.prev {
-	font-family: Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif
 }
 
 .pagination>li>a:focus,.pagination>li>a:hover {
@@ -1998,10 +1984,6 @@ img.size-smiley {
 .post-navigation .nav-next {
 	float: right;
 	text-align: right
-}
-
-.nav-previous,.post-navigation .nav-next {
-	font-family: Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif
 }
 
 footer {
