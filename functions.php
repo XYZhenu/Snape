@@ -6,7 +6,7 @@
  * @version 1.1
  */
 
-define( 'SNAPE_VERSION' , '1.1.2' );
+define( 'SNAPE_VERSION' , '1.1' );
 require_once( get_template_directory() . '/inc/widgets.php');
 
 /**
@@ -15,7 +15,7 @@ require_once( get_template_directory() . '/inc/widgets.php');
 require_once( get_template_directory() . '/inc/version.php' );
 $snape_update_checker = new ThemeUpdateChecker(
 	'Snape', 
-	'https://mirrors.vtrois.com/themes/snape/upgrade.json'
+	'https://raw.githubusercontent.com/Vtrois/Snape/master/inc/upgrade.json'
 );
 
 /**
@@ -33,12 +33,12 @@ add_filter( 'get_avatar', 'snape_get_avatar' );
 function snape_theme_scripts() {  
 	$dir = get_template_directory_uri(); 
     if ( !is_admin() ) {  
-        wp_enqueue_style( 'bootstrap-style', $dir . '/css/bootstrap.min.css', array(), '3.3.7');
-        wp_enqueue_style( 'fontawesome-style', $dir . '/css/font-awesome.min.css', array(), '4.6.3');
-        wp_enqueue_style( 'animate-style', $dir . '/css/animate.min.css', array(), SNAPE_VERSION);
-        wp_enqueue_style( 'bootsnav-style', $dir . '/css/bootsnav.min.css', array(), SNAPE_VERSION);
-        wp_enqueue_style( 'snape-style', get_stylesheet_uri(), array(), SNAPE_VERSION);
-        wp_enqueue_style( 'snape-diy-style',  $dir . '/css/snape.diy.css', array(), SNAPE_VERSION); 
+        wp_enqueue_style( 'bootstrap', $dir . '/css/bootstrap.min.css', array(), '3.3.7');
+        wp_enqueue_style( 'fontawesome', $dir . '/css/font-awesome.min.css', array(), '4.6.3');
+        wp_enqueue_style( 'animate', $dir . '/css/animate.min.css', array(), SNAPE_VERSION);
+        wp_enqueue_style( 'bootsnav', $dir . '/css/bootsnav.min.css', array(), SNAPE_VERSION);
+        wp_enqueue_style( 'snape', get_stylesheet_uri(), array(), SNAPE_VERSION);
+        wp_enqueue_style( 'snape-diy',  $dir . '/css/snape.diy.css', array(), SNAPE_VERSION); 
         wp_enqueue_script( 'jquerys', $dir . '/js/jquery.min.js' , array(), '3.1.0');
         wp_enqueue_script( 'bootstrap', $dir . '/js/bootstrap.min.js', array(), '3.3.4');
         wp_enqueue_script( 'bootsnav', $dir . '/js/bootsnav.min.js', array(), SNAPE_VERSION);
