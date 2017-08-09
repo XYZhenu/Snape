@@ -19,6 +19,18 @@ $snape_update_checker = new ThemeUpdateChecker(
 );
 
 /**
+ * Init theme
+ */
+add_action( 'load-themes.php', 'Init_theme' );
+function Init_theme(){
+  global $pagenow;
+  if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
+    wp_redirect( admin_url( 'themes.php?page=snape' ) );
+    exit;
+  }
+}
+
+/**
  * Replace Gravatar server
  */
 function snape_get_avatar( $avatar ) {
@@ -1122,6 +1134,23 @@ function wp_compress_html(){
 ob_start("wp_compress_html_main");
 }
 add_action('get_header', 'wp_compress_html');
+
+/**
+ * Theme notice
+ */
+function snape_admin_notice() {
+    ?>
+    <style type="text/css">
+        .about-description a{
+            text-decoration:none;
+        }
+    </style>
+    <div class="notice notice-info">
+    <p class="about-description">嗨，欢迎使用 Snape 主题开始创作，同时欢迎您加入主题交流群：<a target="_blank" rel="nofollow" href="http://shang.qq.com/wpa/qunwpa?idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f">51880737</a></p>
+    </div>
+    <?php
+}
+add_action( 'welcome_panel', 'snape_admin_notice' );
 
 /**
  * Admin footer text
