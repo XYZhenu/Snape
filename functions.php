@@ -3,10 +3,10 @@
  * Snape functions and definitions
  *
  * @package Vtrois
- * @version 1.1
+ * @version 1.2
  */
 
-define( 'SNAPE_VERSION' , '1.1' );
+define( 'SNAPE_VERSION' , '1.2' );
 require_once( get_template_directory() . '/inc/widgets.php');
 
 /**
