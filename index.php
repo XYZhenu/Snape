@@ -41,7 +41,7 @@ get_header(); ?>
                 }else{
             ?>
             <div class="hentry clearfix">
-                <div class="err-img text-center"><img class="err-search" src="<?php echo get_template_directory_uri(); ?>/images/error.png"><br/><h1 class="post-notfound post-title-zw">抱歉，没有找到符合内容的结果，请换其它关键词再试！</h1></div>
+                <div class="err-img text-center"><img class="err-search" src="<?php echo get_template_directory_uri(); ?>/images/error.png" alt=""><br/><h1 class="post-notfound post-title-zw">抱歉，没有找到符合内容的结果，请换其它关键词再试！</h1></div>
             </div>
             <?php } ?>
                 <?php snape_pages(3);?>
