@@ -159,7 +159,7 @@ function danger($atts, $content=null, $code="") {
 add_shortcode('danger' , 'danger' );
 
 function wymusic($atts, $content=null, $code="") {
-    $return = '<iframe class="" style="width:100%" frameborder="no" border="0" marginwidth="0" marginheight="0" height=86 src="http://music.163.com/outchain/player?type=2&id=';
+    $return = '<iframe class="" style="width:100%" frameborder="no" border="0" marginwidth="0" marginheight="0" height=86 src="//music.163.com/outchain/player?type=2&id=';
     $return .= $content;
     $return .= '&auto='. snape_option('wy_music') .'&height=66"></iframe>';
     return $return;
@@ -305,9 +305,9 @@ function pptv($atts, $content=null, $code="") {
 add_shortcode('pptv' , 'pptv' );
 
 function bilibili($atts, $content=null, $code="") {
-    $return = '<div class="video-container"><embed height="415" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://static.hdslb.com/miniloader.swf" flashvars="aid=';
+    $return = '<div class="video-container"><embed height="415" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=';
     $return .= $content;
-    $return .= '&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed></div>';
+    $return .= '&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed></div>';
     return $return;
 }
 add_shortcode('bilibili' , 'bilibili' );
