@@ -78,12 +78,6 @@ function optionsframework_options() {
 		'desc' => '输入您的打赏介绍页面的连接，若没开启点赞打赏功能该项无效',
 		'id' => 'donate_links',
 		'type' => 'text'
-	);	
-	$options[] = array(
-		'name' => '新浪分享AppKey',
-		'desc' => '输入您的新浪分享AppKey，若留空不会影响分享功能',
-		'id' => 'sina_appkey',
-		'type' => 'text'
 	);
 	$options[] = array(
 		'name' => '工信部备案信息',
