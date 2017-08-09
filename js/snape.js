@@ -23,10 +23,11 @@
 	var showlove = function() {
 	    $.fn.postLike = function() {
 	        if ($(this).hasClass('done')) {
-	            alert('您已赞过该文章');
+	            layer.msg('您已经支持过了', function() {});
 	            return false;
 	        } else {
 	            $(this).addClass('done');
+	            layer.msg('感谢您的支持');
 	            var id = $(this).data("id"),
 	            action = $(this).data('action'),
 	            rateHolder = $(this).children('.count');
@@ -74,11 +75,19 @@
 		console.log("项目托管：https://github.com/Vtrois/Snape");
 	}
 
+	var showPhotos = function() {
+		layer.photos({
+		  photos: '.post-content'
+		  ,anim: 0
+		}); 
+	}
+
 	$(function() {
 		shareMenu();
 		showlove();
 		gotop();
 		copyright();
+		showPhotos();
 	});
 
 }());

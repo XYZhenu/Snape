@@ -1397,7 +1397,10 @@ a.list-group-item:focus,a.list-group-item:hover,button.list-group-item:focus,but
 
 .post-content img {
 	height: auto;
-	max-width: 100%
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .video-container:not(:first-child) {
