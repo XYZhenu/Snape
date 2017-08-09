@@ -17,6 +17,7 @@
 		<meta name="description" content="<?php snape_description(); ?>" />
 		<meta name="keywords" content="<?php snape_keywords();?>" />
 		<?php wp_head(); ?>
+        <?php wp_print_scripts('jquery'); ?>
 		<?php if ( snape_option( 'site_bw' )==1 ) : ?>
 		<style type="text/css">
         html{filter: grayscale(100%);-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: grayscale(100%);-o-filter: grayscale(100%);filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);filter: gray;-webkit-filter: grayscale(1); }

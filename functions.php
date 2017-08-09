@@ -39,7 +39,7 @@ function snape_theme_scripts() {
         wp_enqueue_style( 'bootsnav', $dir . '/css/bootsnav.min.css', array(), SNAPE_VERSION);
         wp_enqueue_style( 'snape', get_stylesheet_uri(), array(), SNAPE_VERSION);
         wp_enqueue_style( 'snape-diy',  $dir . '/css/snape.diy.css', array(), SNAPE_VERSION); 
-        wp_enqueue_script( 'jquerys', $dir . '/js/jquery.min.js' , array(), '3.1.0');
+        wp_enqueue_script( 'jquery', $dir . '/js/jquery.min.js' , array(), '3.1.0');
         wp_enqueue_script( 'bootstrap', $dir . '/js/bootstrap.min.js', array(), '3.3.4');
         wp_enqueue_script( 'bootsnav', $dir . '/js/bootsnav.min.js', array(), SNAPE_VERSION);
         wp_enqueue_script( 'qrcode', $dir . '/js/jquery.qrcode.min.js', array(), SNAPE_VERSION);
