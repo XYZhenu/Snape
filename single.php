@@ -20,10 +20,10 @@ get_header(); ?>
         <h2 class="title"><?php the_title(); ?></h2>
         <div class="text-center">
             <span>
-                <i class="fa fa-calendar"></i> <?php the_time('Y/n/j') ?>
-                <i class="fa fa-commenting-o"></i> <?php echo snape_comments_users($post->ID); ?> Comments
-                <i class="fa fa-eye"></i> <?php echo snape_get_post_views();?> Views
-                <i class="fa fa-thumbs-o-up"></i> <?php if( get_post_meta($post->ID,'love',true) ){ echo get_post_meta($post->ID,'love',true); } else { echo '0'; }?> Times
+                <i class="fa fa-calendar"></i> <?php echo get_the_date(); ?>
+                <i class="fa fa-commenting-o"></i> <?php echo snape_comments_users($post->ID); ?>条评论
+                <i class="fa fa-eye"></i> <?php echo snape_get_post_views();?>次阅读
+                <i class="fa fa-thumbs-o-up"></i> <?php if( get_post_meta($post->ID,'love',true) ){ echo get_post_meta($post->ID,'love',true); } else { echo '0'; }?>人点赞
             </span>
         </div>
     </div>
