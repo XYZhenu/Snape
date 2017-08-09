@@ -82,6 +82,11 @@ remove_action( 'wp_footer', 'wp_print_footer_scripts' );
 remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );   
 remove_action( 'template_redirect', 'wp_shortlink_header', 11, 0 ); 
 
+add_action( 'wp_enqueue_scripts', 'mt_enqueue_scripts', 1 );
+function mt_enqueue_scripts() {
+  wp_deregister_script('jquery');
+}
+
 function disable_emojis() {
     global $wp_version;
     if ($wp_version >= 4.2) {
