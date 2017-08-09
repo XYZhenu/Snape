@@ -11,8 +11,6 @@
 		<title><?php wp_title( '-', true, 'right' ); ?></title>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Cache-Control" content="no-transform" />  
-        <meta http-equiv="Cache-Control" content="no-siteapp" />  
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="<?php snape_description(); ?>" />
 		<meta name="keywords" content="<?php snape_keywords();?>" />
