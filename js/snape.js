@@ -70,14 +70,15 @@
 		});
 	}
 
+	var copyright = function() {
+		console.log("项目托管：https://github.com/Vtrois/Snape");
+	}
+
 	$(function() {
 		shareMenu();
 		showlove();
 		gotop();
+		copyright();
 	});
 
-	console.log("╔╦╗┬ ┬┌─┐┌┬┐┌─┐  ╔═╗┌┐┌┌─┐┌─┐┌─┐  ╔╦╗┌─┐┌┬┐┌─┐  ╔╗ ┬ ┬  ╦  ╦┌┬┐┬─┐┌─┐┬┌─┐\n ║ ├─┤├┤ │││├┤   ╚═╗│││├─┤├─┘├┤   ║║║├─┤ ││├┤   ╠╩╗└┬┘  ╚╗╔╝ │ ├┬┘│ ││└─┐\n ╩ ┴ ┴└─┘┴ ┴└─┘  ╚═╝┘└┘┴ ┴┴  └─┘  ╩ ╩┴ ┴─┴┘└─┘  ╚═╝ ┴    ╚╝  ┴ ┴└─└─┘┴└─┘");
-	console.log("Snape 主题下载：https://github.com/Vtrois/Snape");
-	console.log("Snape 主题使用：https://www.vtrois.com/snape-faq.html");
-	console.log("Snape 文章样式：https://www.vtrois.com/snape-article-style.html")
 }());
