@@ -30,7 +30,7 @@ add_action( 'widgets_init', 'remove_default_widget' );
 
 class snape_widget_ad extends WP_Widget {
 
-    function __construct {
+    function __construct() {
         $widget_ops = array(
             'classname' => 'widget_snape_ad',
             'name'        => 'Snape - 广告位',
@@ -176,7 +176,7 @@ class snape_widget_tags extends WP_Widget {
 
 class snape_widget_search extends WP_Widget {
 
-    function __construct {
+    function __construct() {
         $widget_ops = array(
             'classname' => 'widget_snape_search',
             'name'        => 'Snape - 站点搜索',
