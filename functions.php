@@ -22,7 +22,7 @@ $snape_update_checker = new ThemeUpdateChecker(
  * Replace Gravatar server
  */
 function snape_get_avatar( $avatar ) {
-    $avatar = preg_replace( "/http:\/\/(www|\d).gravatar.com/", "http://cn.gravatar.com",$avatar );
+    $avatar = str_replace( array( 'www.gravatar.com', '0.gravatar.com', '1.gravatar.com', '2.gravatar.com', '3.gravatar.com', 'secure.gravatar.com' ), 'cn.gravatar.com', $avatar );
     return $avatar;
 }
 add_filter( 'get_avatar', 'snape_get_avatar' );
