@@ -2,9 +2,8 @@
 
 function snape_widgets_init() {
     register_sidebar( array(
-        'name' => __( '侧边栏', 'snape' ),
+        'name' => 侧边栏,
         'id' => 'sidebar_tool',
-        'description' => __( '', 'snape' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s clearfix">',
         'after_widget' => '</aside>',
         'before_title' => '<h4 class="widget-title">',
@@ -31,13 +30,13 @@ add_action( 'widgets_init', 'remove_default_widget' );
 
 class snape_widget_ad extends WP_Widget {
 
-    function snape_widget_ad() {
+    function __construct {
         $widget_ops = array(
             'classname' => 'widget_snape_ad',
             'name'        => 'Snape - 广告位',
             'description' => 'Snape主题特色组件 - 广告位'
         );
-        parent::WP_Widget( false, false, $widget_ops );
+        parent::__construct( false, false, $widget_ops );
     }
 
     function widget( $args, $instance ) {
@@ -177,13 +176,13 @@ class snape_widget_tags extends WP_Widget {
 
 class snape_widget_search extends WP_Widget {
 
-    function snape_widget_search() {
+    function __construct {
         $widget_ops = array(
             'classname' => 'widget_snape_search',
             'name'        => 'Snape - 站点搜索',
             'description' => 'Snape主题特色组件 - 站点搜索'
         );
-        parent::WP_Widget( false, false, $widget_ops );
+        parent::__construct( false, false, $widget_ops );
     }
 
     function widget( $args, $instance ) {
